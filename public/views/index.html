@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Visualizador del árbol</title>
+	<link rel="stylesheet" href="./libs/css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./libs/css/jstree/jstree.min.css">
+	<link rel="stylesheet" href="./libs/css/vis/vis.min.css">
+
+	<link rel="stylesheet" href="./src/css/main.css">
+	
+</head>
+<body>
+	<div class="container">
+		<div class="col-sm">
+			<div class="card">
+				<h5 class="card-header text-white bg-primary">Estructura del árbol</h5>
+				<div class="card-body">
+					<div class="row">
+						<div class="col-sm">
+							<div class="col-sm">
+								<form>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm">
+												<label for="fileTree">Inserte archivo</label>
+												<input type="file" class="form-control-file" id="fileTree">
+											</div>
+											<div class="col-sm">
+												<button id="reload" class="btn btn-primary" type="button">Reenviar</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="col-sm">
+								<label for="node">Hoja</label>
+								<select class="form-control selectSheet"></select>
+							</div>
+							<div class="col-sm">
+								<label for="node">Titulo</label>
+								<select class="form-control selectTitle selectId"></select>
+							</div>
+							<div class="col-sm">
+								<label for="node">Nombre Nodo</label>
+								<select class="form-control selectLabel selectId"></select>
+							</div>
+							<div class="col-sm">
+								<label for="node">Pariente</label>
+								<select class="form-control selectParent selectId"></select>
+							</div>
+							<div class="col-sm">
+								<label for="node">Hijo</label>
+								<select class="form-control selectChildren selectId"></select>
+							</div>
+							<div class="col-sm">
+								<button id="build" class="btn btn-success" type="button">Mostrar arbol</button>
+							</div>
+						</div>
+						<div class="col-sm">
+							<div id="tree"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<script src="./libs/js/jquery/jquery.min.js"></script>
+	<script src="./libs/js/bootstrap/popper.min.js"></script>
+	<script src="./libs/js/bootstrap/bootstrap.min.js"></script>
+	<script src="./libs/js/jstree/jstree.min.js"></script>
+	<script src="./libs/js/vis/vis.min.js"></script>
+
+	<script src="./src/js/Class/TreeBuild.js"></script>
+	
+	<script src="./src/js/main.js"></script>
+</body>
+</html>
