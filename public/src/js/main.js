@@ -64,18 +64,18 @@ $(document).ready(()=>{
 
 	let options = {
 		height: '400px',
-		manipulation: false,
+		manipulation: true,
 		layout: {
 			hierarchical: {
 				enabled: true,
 				direction: "UD",
 				sortMethod: "directed",
 				nodeSpacing: 350,
-				treeSpacing: 350,
+				treeSpacing: 150,
 				parentCentralization: true,
 			}
 		},
-		interaction: { dragNodes: false, zoomView: true,},
+		interaction: { dragNodes: true, zoomView: true,},
 		physics: {
 			enabled: false
 		},
